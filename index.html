@@ -36,6 +36,20 @@ We recommend moving this block and the preceding CSS link to the HEAD of your HT
                 <h1>What's your Energy Glow?</h1>
                 <h5>Ever wondered how much energy you use? Us too.</h5>
             </div>
+            
+            <script>      
+                $(document).ready(function() {
+                    $('#mc-embedded-subscribe-form').submit(function() {
+                        var popup = window.open('', 'formpopup', 'width=400,height=400,resizeable,scrollbars');
+                        this.target = 'formpopup';
+
+                        setTimeout( function() {
+                            popup.close();
+                            location.reload(); 
+                        }, 5000 );
+                    });
+                });
+            </script>
 
             <!-- Begin MailChimp Signup Form -->
             <div id="mc_embed_signup" style="border-radius:10px; background: rgba(0,0,0,.5);">
@@ -70,22 +84,6 @@ We recommend moving this block and the preceding CSS link to the HEAD of your HT
                     </div>
                 </form>
                 
-                <script>
-                    
-                    $(document).ready(function() {
-    $('#myform').submit(function() {
-    });
-});
-                    $('#mc-embedded-subscribe-form').submit(function() {
-                        var popup = window.open('', 'formpopup', 'width=400,height=400,resizeable,scrollbars');
-                        this.target = 'formpopup';
-                        
-                        setTimeout( function() {
-                            popup.close();
-                            location.reload(); 
-                        }, 5000 );
-                    });
-                </script>
             </div>
 
             <div class="center">
