@@ -27,13 +27,6 @@
         /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
 We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
     </style>
-    <script>
-        $('#mc-embedded-subscribe-form').submit(function() {
-            setTimeout( function() { 
-                location.reload(); 
-            }, 2000 ); 
-        });
-    </script>
 </head>
 
 <body>
@@ -76,6 +69,14 @@ We recommend moving this block and the preceding CSS link to the HEAD of your HT
                         </div>
                     </div>
                 </form>
+                
+                <script>
+                    $('#mc-embedded-subscribe-form').submit(function() {
+                        setTimeout( function() { 
+                            location.reload(); 
+                        }, 2000 ); 
+                    });
+                </script>
             </div>
 
             <div class="center">
