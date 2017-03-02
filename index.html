@@ -71,10 +71,19 @@ We recommend moving this block and the preceding CSS link to the HEAD of your HT
                 </form>
                 
                 <script>
+                    
+                    $(document).ready(function() {
+    $('#myform').submit(function() {
+    });
+});
                     $('#mc-embedded-subscribe-form').submit(function() {
-                        setTimeout( function() { 
+                        var popup = window.open('', 'formpopup', 'width=400,height=400,resizeable,scrollbars');
+                        this.target = 'formpopup';
+                        
+                        setTimeout( function() {
+                            popup.close();
                             location.reload(); 
-                        }, 2000 ); 
+                        }, 5000 );
                     });
                 </script>
             </div>
