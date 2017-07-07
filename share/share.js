@@ -32,7 +32,7 @@ $(function() {
     });
 
     $('.play').on('click', function() {
-        window.location.href = "http://kck.st/TH0NAN";
+        window.location.href = "https://www.kickstarter.com/projects/1178650747/202759999?token=b296bc31";
     });
 
 });
