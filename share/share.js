@@ -28,7 +28,7 @@ $(function() {
                 left = (screen.width/2)-(w/2),
                 top = (screen.height/2)-(h/2);
 
-            window.open('https://twitter.com/meetglow' + title + '&url=' + loc, '', 'height=' + h + ', width=' + w + ', top='+top +', left='+ left +', toolbar=0, location=0, menubar=0, directories=0, scrollbars=0');
+            window.open('http://hrefshare.com/39e0b' + title + '&url=' + loc, '', 'height=' + h + ', width=' + w + ', top='+top +', left='+ left +', toolbar=0, location=0, menubar=0, directories=0, scrollbars=0');
     });
 
     $('.play').on('click', function() {
