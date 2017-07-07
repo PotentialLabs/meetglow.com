@@ -5,7 +5,7 @@ html, body {
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
     font-size: 14px;
     color: #555;
     min-height: 100%;
@@ -18,7 +18,7 @@ body {
 
 a, a:visited, a:active, a:hover {
     text-decoration: none;
-    outline: none;    
+    outline: none;
 }
 
 h1 {
@@ -63,7 +63,7 @@ h2 {
 
 
 button {
-    font-family: "Open Sans", sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
     font-weight: bold;
     background: #87C442;
     background-image: -webkit-gradient(linear,50% 0,50% 100%,color-stop(0%,#9FD04F),color-stop(100%,#87C442));
@@ -116,15 +116,15 @@ button:hover {
 	line-height: 0;
 	height: 0;
 }
- 
+
 .clearfix {
 	display: inline-block;
 }
- 
+
 html[xmlns] .clearfix {
 	display: block;
 }
- 
+
 * html .clearfix {
 	height: 1%;
 }
