@@ -1,0 +1,61 @@
+---
+---
+/*********************************************************************************/
+/* Basic                                                                         */
+/*********************************************************************************/
+
+body {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+20,161616+21,161616+100 */
+  background: #161616;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #ffffff 0%, #ffffff 20%, #161616 21%, #161616 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #ffffff 0%, #ffffff 20%, #161616 21%, #161616 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #ffffff 0%, #ffffff 20%, #161616 21%, #161616 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr= '#ffffff', endColorstr='#161616',GradientType=0 );
+  /* IE6-9 */
+  background-repeat: no-repeat;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+input,
+select,
+textarea {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+section > p {
+  font-size: 1.2em;
+}
+
+/*********************************************************************************/
+/* Main                                                                          */
+/*********************************************************************************/
+
+header h2.faq {
+  font-size: 2em;
+  font-weight: 400;
+}
+
+/*********************************************************************************/
+/* Logo                                                                          */
+/*********************************************************************************/
+
+#logo {
+  font-family: 'Expletus Sans', sans-serif;
+
+  span {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 2em;
+  }
+}
+
+/*********************************************************************************/
+/* Nav                                                                           */
+/*********************************************************************************/
+
+#nav > ul > li.current {
+  background: rgba(255, 255, 255, 0.3);
+}
