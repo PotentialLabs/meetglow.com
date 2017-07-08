@@ -1,5 +1,5 @@
 ---
 title: "How does Glow work?"
-layout: default
+layout: faq
 ---
 Magic, my _dear_ friend.

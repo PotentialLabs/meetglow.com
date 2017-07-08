@@ -5,7 +5,8 @@ gems: [jekyll-paginate]
 permalink: pretty
 
 collections:
-  faqs:
+  faq:
     output: true
     permalink: /:collection/:path/
     title: FAQ
+    layout: faq

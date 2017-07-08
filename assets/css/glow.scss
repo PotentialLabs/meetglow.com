@@ -4,7 +4,7 @@
 /* Basic                                                                         */
 /*********************************************************************************/
 
-body {
+html {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+20,161616+21,161616+100 */
   background: #161616;
   /* Old browsers */
@@ -12,11 +12,14 @@ body {
   /* FF3.6-15 */
   background: -webkit-linear-gradient(top, #ffffff 0%, #ffffff 20%, #161616 21%, #161616 100%);
   /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom, #ffffff 0%, #ffffff 20%, #161616 21%, #161616 100%);
+  background: linear-gradient(to top, #ffffff 0%, #ffffff 20%, #161616 21%, #161616 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr= '#ffffff', endColorstr='#161616',GradientType=0 );
   /* IE6-9 */
-  background-repeat: no-repeat;
+  // background-repeat: no-repeat;
+}
+
+body {
   font-family: 'Josefin Sans', sans-serif;
 }
 
@@ -39,6 +42,14 @@ header h2.faq {
   font-weight: 400;
 }
 
+#header {
+  position: relative;
+  background: url("/images/header.jpg") no-repeat bottom center;
+  background-attachment: fixed;
+  background-size: cover;
+  text-align: center;
+}
+
 /*********************************************************************************/
 /* Logo                                                                          */
 /*********************************************************************************/
@@ -58,4 +69,16 @@ header h2.faq {
 
 #nav > ul > li.current {
   background: rgba(255, 255, 255, 0.3);
+}
+
+/*********************************************************************************/
+/* Tweet                                                                         */
+/*********************************************************************************/
+
+#tweet {
+  position: relative;
+  text-align: center;
+  background: url("/images/header.jpg") no-repeat center center;
+  background-attachment: fixed;
+  background-size: cover;
 }
