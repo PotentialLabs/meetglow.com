@@ -1,6 +1,7 @@
-name: Linear
-description: Linear template for Jekyll
+name: Glow
+description: "Glow: an energy tracker for your home"
 paginate: 10
+gems: [jekyll-paginate]
 permalink: pretty
 
 collections:
@@ -8,4 +9,3 @@ collections:
     output: true
     permalink: /:collection/:path/
     title: FAQ
-    
