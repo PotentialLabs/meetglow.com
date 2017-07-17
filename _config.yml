@@ -1,8 +1,8 @@
 name: Glow
 description: "Glow: an energy tracker for your home"
 paginate: 10
-gems: [jekyll-paginate]
 permalink: pretty
+plugins: [jekyll-paginate]
 
 collections:
   faq:
