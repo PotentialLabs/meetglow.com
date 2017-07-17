@@ -1,0 +1,5 @@
+---
+title: "Will Glow work with solar panels?"
+layout: faq
+---
+Glow currently is planned to work with Solar installations that works with Enphase systems. Any such system *must* be connected to the internet for solar output monitoring.

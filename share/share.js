@@ -17,7 +17,7 @@ $(function() {
             if ((screen.width < 480) || (screen.height < 480)) {
                 window.open ('http://hrefshare.com/78954', '', 'toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=no, copyhistory=no, width='+w+', height='+h+', top='+top+', left='+left);
             } else {
-                window.open ('http://hrefshare.com/78954', '', 'toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=no, copyhistory=no, width='+w+', height='+h+', top='+top+', left='+left);   
+                window.open ('http://hrefshare.com/78954', '', 'toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=no, copyhistory=no, width='+w+', height='+h+', top='+top+', left='+left);
             }
     });
 
@@ -28,11 +28,11 @@ $(function() {
                 left = (screen.width/2)-(w/2),
                 top = (screen.height/2)-(h/2);
 
-            window.open('http://twitter.com/share?text=' + title + '&url=' + loc, '', 'height=' + h + ', width=' + w + ', top='+top +', left='+ left +', toolbar=0, location=0, menubar=0, directories=0, scrollbars=0');
+            window.open('http://hrefshare.com/39e0b' + title + '&url=' + loc, '', 'height=' + h + ', width=' + w + ', top='+top +', left='+ left +', toolbar=0, location=0, menubar=0, directories=0, scrollbars=0');
     });
 
     $('.play').on('click', function() {
-        window.location.href = "http://kck.st/TH0NAN";
+        window.location.href = "https://www.kickstarter.com/projects/1178650747/202759999?token=b296bc31";
     });
 
 });
