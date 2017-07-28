@@ -14,13 +14,13 @@ layout: press
 
 ### Who We Are
 
-Potential Labs is a small startup nestled in the hills of Southeast Ohio, part of the Appalachian region. We strive to build solutions that help today’s consumers track their use of resources with the goal of reducing waste. Reducing waste saves money and has a positive effect on our environment.
+Potential Labs is a startup nestled in the hills of Southeast Ohio, part of the Appalachian region. We build solutions that help today’s consumers track how they use resources with the goal of reducing waste. Reducing waste saves money and has a positive effect on our environment.
 
 ### Glow
 
 <img class="right" src="/images/glow-view13-portrait.jpg">
 
-Glow is a smart energy tracker for the home. It gives users glowing real-time feedback about their energy use leading to energy savings and reduced impact on the environment. Glow’s breakthrough inductive wireless sensor allows anyone to install it in just a few minutes. The device provides simple on-the-go energy monitoring and smart budgeting tools from the companion mobile app. It will also alert users about extended high usage, that could be dangerous, by sending a notification to their phone.
+Glow is a smart energy tracker for the home. It gives users glowing real-time feedback about their energy use leading to energy savings and reduced impact on the environment. Glow’s breakthrough inductive wireless sensor allows anyone to install it in just a few minutes. The device provides simple on-the-go energy monitoring and smart budgeting tools from its companion mobile app. It also alerts users about extended high usage, which could be dangerous, sending a notification to their phone.
 
 ### Features
 
@@ -30,7 +30,7 @@ Glow is a smart energy tracker for the home. It gives users glowing real-time fe
 - Mobile app for detailed data
 - Ambient light sensor dynamically adjusts indicator brightness
 - Snooze button for temporarily pausing glowing indicator
-- Runs on just 6 Watts, less than a LED light bulb.
+- Uses just 6 Watts, less than a LED light bulb.
 
 
 ![](/images/ortho-front.jpg)
