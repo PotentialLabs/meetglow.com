@@ -30,6 +30,7 @@ Glow is a smart energy tracker for the home. It gives users glowing real-time fe
 - Mobile app for detailed data
 - Ambient light sensor dynamically adjusts indicator brightness
 - Snooze button for temporarily pausing glowing indicator
+- Runs on just 6 Watts, less than a LED light bulb.
 
 
 ![](/images/ortho-front.jpg)
