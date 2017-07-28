@@ -1,5 +1,31 @@
 ---
 ---
+
+@mixin montserrat($size) {
+  font-family: 'Montserrat-Medium', sans-serif;
+  font-variant-caps: all-small-caps;
+  font-size: $size;
+}
+
+@mixin josefin {
+  font-family: 'Josefin Slab', serif;
+}
+
+$mobile-width: 500px;
+// $desktop-width: 1024px;
+
+@mixin mobile {
+  @media (max-width: #{$mobile-width}) {
+    @content;
+  }
+}
+
+// @mixin desktop {
+//   @media (min-width: #{$mobile-width + 1}) {
+//     @content;
+//   }
+// }
+
 /*********************************************************************************/
 /* Basic                                                                         */
 /*********************************************************************************/
@@ -14,19 +40,19 @@ html {
   /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to top, #ffffff 0%, #ffffff 20%, #161616 21%, #161616 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr= '#ffffff', endColorstr='#161616',GradientType=0 );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=  '#ffffff', endColorstr='#161616',GradientType=0 );
   /* IE6-9 */
   // background-repeat: no-repeat;
 }
 
 body {
-  font-family: 'Josefin Sans', sans-serif;
+  @include josefin;
 }
 
 input,
 select,
 textarea {
-  font-family: 'Josefin Sans', sans-serif;
+  @include josefin;
 }
 
 section > p {
@@ -41,21 +67,123 @@ section > ol {
 /* Main                                                                          */
 /*********************************************************************************/
 
+#main {
+  padding-top: 4em;
+}
+
 header h2.faq {
   font-size: 2em;
   font-weight: 400;
 }
 
 header h2.feature {
-  font-family: 'Montserrat-Medium', sans-serif;
-  font-size: 2.5em;
-  font-variant-caps: all-small-caps;
+  @include montserrat(2.5em);
 }
 
 #header {
   background: url("/images/header.jpg") no-repeat bottom center;
   background-attachment: fixed;
   background-size: cover;
+
+  padding-top: 8em;
+  padding-bottom: 4em;
+}
+
+div.press {
+  width: 50%;
+  margin: 0 auto;
+
+  @include mobile {
+    width: 90%;
+  }
+
+  h1 {
+    font-family: 'Expletus Sans', sans-serif;
+    font-size: 4em;
+    padding: 20px;
+    text-align: center;
+  }
+
+  h2 {
+    padding: 0;
+    @include josefin;
+    font-size: 1.5em;
+    text-align: center;
+  }
+
+  h2#press {
+    text-decoration: underline;
+    padding-bottom: 60px;
+    font-size: 2.5em;
+  }
+
+  h3 {
+    padding: 20px 0;
+    @include montserrat(1.5em);
+    //@include montserrat(2em);
+  }
+
+  h4 {
+    padding: 10px 0;
+    @include josefin;
+    font-size: 1.25em;
+  }
+
+  ul {
+    list-style: square;
+    padding-left: 30px;
+  }
+
+  img {
+    width: 75%;
+    display: block;
+    margin: 0 auto;
+
+    @include mobile {
+      width: 90%;
+    }
+  }
+
+  img.right {
+    margin-top: -40px;
+    float: right;
+    padding: 10px;
+    width:40%;
+
+    @include mobile {
+      margin-top: inherit;
+      float: none;
+      width:90%;
+    }
+
+  }
+
+  img.logo {
+    width: 50%;
+
+    &.shaded {
+      border-radius: 10px;
+
+      // background-color:#eee;
+      // background-image: radial-gradient(#ccc 10%, transparent 11%),
+      // radial-gradient(#ccc 10%, transparent 11%);
+      // background-size:20px 20px;
+      // background-position: 10px 10px, 20px 20px;
+
+      background-color: #eee;
+      background-image: linear-gradient(45deg, #ccc 25%, transparent 25%, transparent 75%, #ccc 50%, #ccc 50%),
+      linear-gradient(45deg, #ccc 25%, transparent 25%, transparent 75%, #ccc 50%, #ccc 50%);
+      background-size:10px 10px;
+      background-position:0 0, 15px 15px;
+    }
+
+    /* Smartphones (portrait and landscape) ----------- */
+    @include mobile {
+      /* Styles */
+      width: 90%;
+    }
+  }
+
 }
 
 /*********************************************************************************/
@@ -66,7 +194,7 @@ header h2.feature {
   font-family: 'Expletus Sans', sans-serif;
 
   span {
-    font-family: 'Josefin Sans', sans-serif;
+    @include josefin;
     font-size: 2em;
   }
 }
