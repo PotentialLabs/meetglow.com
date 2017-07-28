@@ -10,4 +10,4 @@ Simple.
 
 3. Download the app and follow the directions to add Glow to your home Wifi.
 
-4. Next, you'll be asked to plug Glow into a few different outlets around your home. This will may a few minutes.
+4. Next, you'll be asked to plug Glow into a few different outlets around your home. This will calibrate Glow to your home and may take a few minutes.
