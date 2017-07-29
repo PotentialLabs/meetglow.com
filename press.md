@@ -20,27 +20,33 @@ Potential Labs is a startup nestled in the hills of Southeast Ohio, part of the 
 
 <img class="right" src="/images/glow-view13-portrait.jpg">
 
-Glow is a smart energy tracker for the home. It gives users glowing real-time feedback about their energy use leading to energy savings and reduced impact on the environment. Glow’s breakthrough inductive wireless sensor allows anyone to install it in just a few minutes. The device provides simple on-the-go energy monitoring and smart budgeting tools from its companion mobile app. It also alerts users about extended high usage, which could be dangerous, sending a notification to their phone.
+Glow is a smart energy tracker for the home. It gives users glowing real-time feedback about their energy use, leading to energy savings and reduced impact on the environment. Glow’s breakthrough inductive wireless sensor allows anyone to install it in just a few minutes. The device provides simple on-the-go energy monitoring and smart budgeting tools from its companion mobile app. It also alerts users about extended high usage, which could be dangerous, sending a notification to their phone.
 
 ### Features
 
 - Glowing indicator of real-time energy use
+- Learns about users' homes and tailors feedback to be helpful
 - Mobile push notifications alert users of high usage
 - Simple energy cost forecast and smart budgeting
-- Mobile app for detailed data
+- Mobile app for detailed data exploration
 - Ambient light sensor dynamically adjusts indicator brightness
-- Snooze button for temporarily pausing glowing indicator
-- Uses just 6 Watts, less than a LED light bulb.
+- Snooze button for temporarily pausing glowing feedback
+- Uses just 6 Watts, less than an LED light bulb.
 
 
 ![](/images/ortho-front.jpg)
 
 ![](/images/ortho-back.jpg)
 
+### How Glow Works
+
+Glow's breakthrough wireless sensor uses magneto-resistive sensing to measure the inductive magnetic fields created as energy flows through the meter box and into the home. This type of magneto-resistive sensing was first popularized for consumer use in smart phones, where it was used to sense the magnetic field of the earth for the compass app. Glow's sensor sends energy data wirelessly to the base unit where it is processed and sent to Glow's cloud service.
+
+Glow analyzes a home’s energy use data to understand how and when it uses energy. If it's using more than normal, Glow turns amber, then red. When a home is saving money, Glow turns green. And if there is extended high usage, like if someone accidentally left the oven or coffee pot on, or the fridge door open, Glow sends a helpful push notification to the user's phone.
 
 ### Why Glow Matters
 
-Over the past 15 years, the price of energy has consistently outpaced inflation. Meanwhile, America’s residential homes, on average, waste almost 40% of the energy that their occupants pay for. These factors translate into energy costs for mainstream consumers that more than two thirds (68%) say feel is exorbitant.
+Over the past 15 years, the price of energy has consistently outpaced inflation. Meanwhile, America’s residential homes, on average, waste almost 40% of the energy that their occupants pay for. These factors translate into energy costs for mainstream consumers that more than two thirds (68%) say they feel is exorbitant.
 
 Additionally, in light of America pulling out of the Paris Agreement, it is more important than ever for individuals to make personal efforts to reduce their impact on the environment. Reduced energy use directly correlates to a decrease in greenhouse gas emissions from energy production.
 
@@ -68,7 +74,7 @@ Glow is an easy first step that consumers can take towards combating waste, high
 Ben has been building software for Apple platforms for the past 15 years. He’s started two small software companies (Acacia Tree Software and Nice Mohawk Limited), and his apps have been used by millions worldwide. Ben got interested in energy efficiency after having a Solar PV system installed on his first home in 2009.
 
 #### **Robin Kinney (Co-founder, CTO)** -- [robin@energyglow.io](mailto:robin@energyglow.io)
-Robin is an electrical engineer and manager with 25 years of experience in the Silicon Valley medical device industry. His past experience covers research, development, and software quality management. Robin was part of the team that built the first linear accelerator for cancer treatment. Over the past 10 years, Robin has been active in energy monitoring and efficiency work with nonprofits in SE Ohio.
+Robin is an electrical engineer and manager with 25 years of experience in the Silicon Valley medical device industry. His past experience covers research, development, and software quality management. Robin was part of the team that built the first linear accelerator for cancer treatment. Over the past 10 years, Robin has been active in the energy monitoring space, as well as doing energy efficiency work with nonprofits in Southeast Ohio.
 
 #### **Karen Davis (CFO)**
 25+ years of experience helping companies achieve objectives. Multiple CFO positions in addition to management roles in accounting & VC firms.
