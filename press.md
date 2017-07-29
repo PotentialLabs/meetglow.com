@@ -40,7 +40,7 @@ Glow is a smart energy tracker for the home. It gives users glowing real-time fe
 
 ### How Glow Works
 
-Glow's breakthrough wireless sensor uses magneto-resistive sensing to measure the inductive magnetic fields created as energy flows through the meter box and into the home. This type of magneto-resistive sensing was first popularized for consumer use in smart phones, where it was used to sense the magnetic field of the earth for the compass app. Glow's sensor sends energy data wirelessly to the base unit where it is processed and sent to Glow's cloud service.
+Glow's breakthrough wireless sensor uses magneto-resistive sensing to measure the inductive magnetic fields created as energy flows through the meter box and into the home. This type of magneto-resistive sensing was first popularized for consumer use in smart phones, where it was used to sense the magnetic field of the earth for the compass app. Glow's sensor sends energy data wirelessly to the in-home unit where it is processed and sent to Glow's cloud service.
 
 Glow analyzes a home’s energy use data to understand how and when it uses energy. If it's using more than normal, Glow turns amber, then red. When a home is saving money, Glow turns green. And if there is extended high usage, like if someone accidentally left the oven or coffee pot on, or the fridge door open, Glow sends a helpful push notification to the user's phone.
 
