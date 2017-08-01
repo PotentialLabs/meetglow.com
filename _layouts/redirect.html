@@ -43,13 +43,21 @@
 			document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
 		fbq('init', '230672480788130'); // Insert your pixel ID here.
 		fbq('track', 'PageView');
+
+		{% if page.fbEvent %}
+		fbq('track', '{{ page.fbEvent }}');
+		{% endif %}
 	</script>
 
 	<!-- Redirect to Kickstarter -->
 	<meta name="referrer" content="origin">
-	<meta http-equiv="refresh" content="0;{{ page.redirectURL }}">
+	<meta http-equiv="refresh" content="1;{{ page.redirectURL }}">
 	<!-- End Redirect to Kickstarter -->
 
 </head>
+<body>
 
+	{{ content }}
+
+</body>
 </html>
