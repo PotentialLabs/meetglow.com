@@ -3,6 +3,7 @@ description: "Glow: an energy tracker for your home"
 paginate: 10
 permalink: pretty
 gems: [jekyll-paginate]
+keywords: "monitor energy usage home, how to monitor energy usage at home, electricity energy monitor, home power monitoring system, electrical power monitor, home electricity monitoring, home energy monitor, electricity usage monitor, energy monitoring, power monitoring system, power monitoring devices"
 
 collections:
   faq:
