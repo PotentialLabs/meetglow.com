@@ -13,6 +13,8 @@ layout: press
 
 Potential Labs is a hardware technology startup whose mission is putting homeowners in charge of their electricity bills.  Nestled in the hills of Southeast Ohio, part of the Appalachian region, Potential Labs’ solutions help consumers understand their energy usage, save money, and reduce their impact on the environment.
 
+Potential Labs is launching their first product, Glow, with a Kickstarter campaign in early August.
+
 ### The Product: Glow
 
 <img class="right" src="/images/glow-view13-portrait.jpg">
