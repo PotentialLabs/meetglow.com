@@ -1,9 +1,64 @@
-name: Glow
-description: "Glow: an energy tracker for your home"
-paginate: 10
+# Welcome to Jekyll!
+#
+
+# Site settings
+title: Glow
+description: |
+  Say hello to Glow, the world’s most beautiful home energy tracker.
+owner: Potential Labs
+first_published: 2017
+email: hello@meetglow.com
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://meetglow.com" # the base hostname & protocol for your site
 permalink: pretty
-gems: [jekyll-paginate]
-keywords: "monitor energy usage home, how to monitor energy usage at home, electricity energy monitor, home power monitoring system, electrical power monitor, home electricity monitoring, home energy monitor, electricity usage monitor, energy monitoring, power monitoring system, power monitoring devices"
+
+social:
+  twitter: https://twitter.com/meetglow
+  #github: https://github.com/<username>
+  #linkedin-square: https://linkedin.com/in/<username>
+  facebook-official: https://facebook.com/meetglow
+  #google-plus-square: https://plus.google.com/u/0/+<username>
+  email: hello@meetglow.com
+  #flickr:
+  #instagram:
+  #youtube-square:
+  #spotify:
+  #stack-overflow:
+  #vimeo:
+  #reddit:
+  #stubleupon:
+  #delicious:
+  #pied-piper:
+  #digg:
+  #soundcloud:
+  #deviantart:
+  #angellist:
+  #tumblr-square:
+  #stackexchange:
+  #weibo:
+  #trello:
+  #foursquare:
+  #linux:
+  #bitbucket-square:
+  #vk:
+  #slack:
+  #vine:
+  #weixin:
+  #yelp:
+  #skyatlas:
+  #leanpub:
+  #connectdevelop:
+  #ils:
+  #forumbee:
+  #tripadvisor:
+  #amazon:
+
+# Build settings
+markdown: kramdown
+#sass:
+#  style: compressed
+
+keywords: "monitor energy usage home, how to monitor energy usage at home, electricity energy monitor, home power monitoring system, electrical power monitor, home electricity monitoring, home energy monitor, electricity usage monitor, energy monitoring, power monitoring system, power monitoring devices, track energy"
 
 collections:
   faq:

@@ -1,10 +1,7 @@
 ---
-title: Press
+title: Press Kit
 layout: press
 ---
-
-## Press Kit
-
 
 # **Glow**
 

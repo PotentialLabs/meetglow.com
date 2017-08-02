@@ -2,21 +2,14 @@
 title: FAQ
 layout: page
 ---
-
-<!-- Main -->
-	<div id="main">
-		<div id="content" class="container faq">
-			{% for question in site.faq %}
-			<div class="row">
-				<section class="8u -2u">
-					<!-- <a href="{{ site.prefix }}{{ post.url }}" class="image full"><img src="/assets/{{ post.featured }}" alt=""></a> -->
-					<header>
-						<h2 class="faq">{{ question.title }}</h2>
-					</header>
-					{{ question.content }}
-				</section>
-			</div>
-			{% endfor %}
-		</div>
+	{% for question in site.faq %}
+	<div class="row faq">
+		<section class="8u -2u">
+			<!-- <a href="{{ site.prefix }}{{ post.url }}" class="image full"><img src="/assets/{{ post.featured }}" alt=""></a> -->
+			<header>
+				<h2 class="faq">{{ question.title }}</h2>
+			</header>
+			{{ question.content }}
+		</section>
 	</div>
-<!-- /Main -->
+	{% endfor %}

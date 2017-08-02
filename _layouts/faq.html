@@ -1,20 +1,16 @@
 ---
-layout: empty
+layout: page
 ---
-<!-- Main -->
-	<div id="main">
-		<div id="content" class="container faq">
-			<div class="row">
-				<section class="8u -2u">
-					<header>
-						<h2>{{ page.title }}</h2>
-					</header>
-					{{ page.content }}
-				</section>
-				{% if page.image %}
-				<a href="{{ site.prefix }}{{ page.url }}" class="image full"><img src="/images/{{ page.image }}" alt=""></a>
-				{% endif %}
-			</div>
-		</div>
+<div class="faq">
+	<div class="row">
+		<section class="8u -2u">
+			<header>
+				<h2>{{ page.title }}</h2>
+			</header>
+			{{ page.content }}
+		</section>
+		{% if page.image %}
+		<a href="{{ site.prefix }}{{ page.url }}" class="image full"><img src="/images/{{ page.image }}" alt=""></a>
+		{% endif %}
 	</div>
-<!-- Main -->
+</div>
