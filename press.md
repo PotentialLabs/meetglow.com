@@ -42,7 +42,9 @@ Glow is a smart energy tracker for the home. It gives users glowing real-time fe
 
 Glow's breakthrough wireless sensor uses magneto-resistive sensing to measure the inductive magnetic fields created as energy flows through the meter box and into the home. This type of sensing was first popularized for consumer use in smartphones, where it was used to sense the magnetic field of the earth for the compass app. Glow's sensor sends energy data wirelessly to the in-home unit where it is processed and sent to Glow's cloud service.
 
-Glow analyzes a home’s energy use data to understand how and when it uses energy. If it's using more than normal, Glow turns amber, then red. When a home is saving money, Glow turns green. And if there is extended high usage, like if someone accidentally left the oven or coffee pot on or the fridge door open, Glow sends a helpful push notification to the user's phone. Users can also set a monthly goal for the energy bill and Glow helps them stay on track.
+![](/images/sensing-infographic.jpg)
+
+Glow analyzes a home’s energy use data to understand how and when it uses energy. If it's using more than normal, Glow turns amber, then red. When a home is saving money, Glow turns green. And if there is extended high usage, like if someone accidentally left the oven on or the fridge door open, Glow sends a helpful push notification to the user's phone. Users can also set a monthly goal for the energy bill and Glow helps them stay on track.
 
 ### Why Glow Matters
 
@@ -81,11 +83,16 @@ Robin is an electrical engineer and manager with 25 years of experience in the S
 #### **Karen Davis (CFO)**
 25+ years of experience helping companies achieve objectives. Multiple CFO positions in addition to management roles in accounting & VC firms.
 
+#### **Andrew Cantino, MS CS (Technical Advisor)**
+Software guy. Previously Principal Engineer at Hightower, Chief Architect at Mavenlink, Consultant at Pivotal Labs. Background in physics, machine learning, & web security.
+
 #### **Eric Marcoullier (Advisor)**
 Product guy. Original mentor at TechStars Boulder. Past startups: IGN, MyBlogLog (acquired by Yahoo), Gnip (acquired by Twitter) & OneTrueFan (acquired by BigDoor).
 
 #### **Dr. Kirk Rowe, Ph.D. (Advisor)**
 USAF Lt. Colonel & Board Certified Clinical Neuropsychologist with experience in behavioral psychology and work on energy efficiency with the Air Force.
+
+![Potential Labs Team](/images/team_shot.jpg)
 
 ### Contact
 
@@ -97,3 +104,7 @@ Ben Lachman, Co-founder
 ![](/images/glow-view7.jpg)
 
 ![](/images/glow-view3-amber.jpg)
+
+![](/images/glow-view15.jpg)
+
+![](/images/glow-view11.jpg)
