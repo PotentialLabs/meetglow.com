@@ -47,7 +47,7 @@ Glow's breakthrough wireless sensor uses magneto-resistive sensing to measure th
 
 ![](/images/sensing-infographic.jpg)
 
-Glow analyzes a home’s energy use data to understand how and when it uses energy. If it's using more than normal, Glow turns amber, then red. When a home is saving money, Glow turns green. And if there is extended high usage, like if someone accidentally left the oven or coffee pot on or the fridge door open, Glow sends a helpful push notification to the user's phone. Users can also set a monthly goal for the energy bill and Glow helps them stay on track.
+Glow analyzes a home’s energy use data to understand how and when it uses energy. If it's using more than normal, Glow turns amber, then red. When a home is saving money, Glow turns green. And if there is extended high usage, like if someone accidentally left the oven on or the fridge door open, Glow sends a helpful push notification to the user's phone. Users can also set a monthly goal for the energy bill and Glow helps them stay on track.
 
 ### Why Glow Matters
 
