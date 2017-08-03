@@ -37,81 +37,19 @@ $mobile-width: 500px;
 /* Basic                                                                         */
 /*********************************************************************************/
 
-// html {
-//   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+20,161616+21,161616+100 */
-//   background: #161616;
-//   /* Old browsers */
-//   background: -moz-linear-gradient(top, #ffffff 0%, #ffffff 20%, #161616 21%, #161616 100%);
-//   /* FF3.6-15 */
-//   background: -webkit-linear-gradient(top, #ffffff 0%, #ffffff 20%, #161616 21%, #161616 100%);
-//   /* Chrome10-25,Safari5.1-6 */
-//   background: linear-gradient(to top, #ffffff 0%, #ffffff 20%, #161616 21%, #161616 100%);
-//   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-//   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=  '#ffffff', endColorstr='#161616',GradientType=0 );
-//   /* IE6-9 */
-//   // background-repeat: no-repeat;
-// }
-
-// body {
-//   @include josefin;
-// }
-//
-// input,
-// select,
-// textarea {
-//   @include josefin;
-// }
-
-// section > p {
-//   font-size: 1.2em;
-// }
-//
-// section > ol {
-//   list-style: decimal;
-//   padding-left: 20px;
-// }
-//
-// section > ul {
-//   list-style: square;
-//   padding-left: 20px;
-// }
-
-
-/*********************************************************************************/
-/* Main                                                                          */
-/*********************************************************************************/
-
-// #main {
-//   padding-top: 4em;
-// }
-
-// h2 {
-//   @include montserrat(2em);
-//   font-weight: 400;
-// }
-
-// header h2.faq {
-//   font-size: 2em;
-//   font-weight: 400;
-// }
-
-// banner h2.feature {
-//   @include montserrat(2.5em);
-// }
-
-// #header {
-//   background: url("/images/header.jpg") no-repeat bottom center;
-//   background-attachment: fixed;
-//   background-size: cover;
-//
-//   padding-top: 8em;
-//   padding-bottom: 4em;
-// }
 #header h1 a {
   font-family: "Expletus Sans", sans-serif;
   text-transform: none;
   font-weight: 400;
   font-size: 1.5em;
+}
+
+.align-bottom {
+  vertical-align: bottom;
+}
+
+#one {
+  padding-bottom: 0;
 }
 
 div.faq {
@@ -237,30 +175,15 @@ img#kickstarter {
 /* Logo                                                                          */
 /*********************************************************************************/
 
-// #main {
-//   > header {
-//     @include vendor('background-image', ('linear-gradient(top, rgba(0,0,0,0.1), rgba(0,0,0,0.1))', 'url("#{$baseurl}/banner.jpg")'));
-//   }
-// }
-//
-// body.landing {
-//   #page-wrapper {
-//     @include vendor('background-image', ('linear-gradient(top, rgba(0,0,0,0.1), rgba(0,0,0,0.1))', 'url("#{$baseurl}/banner.jpg")'));
-//   }
-// }
-//
-// body.is-mobile {
-//   &.landing {
-//     #banner,
-//     .wrapper.style4 {
-//       @include vendor('background-image', ('linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5))', 'url("#{$baseurl}/banner.jpg")'));
-//     }
-//   }
-// }
-
 #banner {
   h2 {
     font-weight: 400;
+  }
+
+  .subtitle {
+    letter-spacing: normal;
+    text-transform: none;
+    font-size: 1.2em;
   }
 
   span#glow {
@@ -269,23 +192,3 @@ img#kickstarter {
     text-transform: none;
   }
 }
-
-/*********************************************************************************/
-/* Nav                                                                           */
-/*********************************************************************************/
-
-// #nav > ul > li.current {
-//   background: rgba(255, 255, 255, 0.3);
-// }
-
-/*********************************************************************************/
-/* Tweet                                                                         */
-/*********************************************************************************/
-
-// #tweet {
-//   position: relative;
-//   text-align: center;
-//   background: url("/images/header.jpg") no-repeat center center;
-//   background-attachment: fixed;
-//   background-size: cover;
-// }
