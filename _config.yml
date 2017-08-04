@@ -13,6 +13,9 @@ url: "http://meetglow.com" # the base hostname & protocol for your site
 permalink: pretty
 
 social:
+  kickstarter: https://www.kickstarter.com/projects/1178650747/202759999
+  share:
+    video: https://www.youtube.com/watch?v=L-npFJcauwA
   twitter: https://twitter.com/meetglow
   #github: https://github.com/<username>
   #linkedin-square: https://linkedin.com/in/<username>
