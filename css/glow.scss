@@ -52,6 +52,18 @@ $mobile-width: 500px;
   padding-bottom: 0;
 }
 
+#two {
+  ul {
+    li {
+      padding: 2.5em 0em 2.5em 0em;
+
+      @include mobile {
+        padding: .5em 0em .5em 0em;
+      }
+    }
+  }
+}
+
 div.faq {
   img {
     width: 75%;
