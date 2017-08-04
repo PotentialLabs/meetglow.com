@@ -102,43 +102,32 @@ layout: landing
 					</section>
 
 				<!-- Three -->
-					<section id="three" class="wrapper style3 special">
-						<div class="inner">
-							<header class="major">
-								<h2>Meet the team behind Glow</h2>
-								<p>
-									Glow was created by a team of scientists and engineers in Athens, Ohio. Our mission is to help homeowners understand their energy usage,
-									save money, and reduce their environmental impact—right inside their homes.
-								</p>
-							</header>
-							<ul class="features">
-								<li class="icon fa-paper-plane-o">
-									<h3>Arcu accumsan</h3>
-									<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
+				<section id="about-the-team" class="wrapper style3 special">
+					<div class="inner">
+						<header class="major">
+							<h2>Meet the team behind Glow</h2>
+							<p>
+								Glow was created by a team of scientists and engineers in Athens, Ohio. Our mission is to help homeowners understand their energy usage,
+								save money, and reduce their environmental impact—right inside their homes.
+							</p>
+						</header>
+
+						<section>
+							<div id="team-shot" class="image">
+								<span class="image fit"><img src="/images/team_shot.jpg" alt="" /></span>
+							</div>
+						</section>
+
+						<ul class="features">
+							{% for member in site.data.team %}
+								<li>
+									<h3>{{ member.name }} ({{ member.title }})</h3>
+									<p>{{ member.bio }}</p>
 								</li>
-								<li class="icon fa-laptop">
-									<h3>Ac Augue Eget</h3>
-									<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
-								</li>
-								<li class="icon fa-code">
-									<h3>Mus Scelerisque</h3>
-									<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
-								</li>
-								<li class="icon fa-headphones">
-									<h3>Mauris Imperdiet</h3>
-									<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
-								</li>
-								<li class="icon fa-heart-o">
-									<h3>Aenean Primis</h3>
-									<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
-								</li>
-								<li class="icon fa-flag-o">
-									<h3>Tortor Ut</h3>
-									<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
-								</li>
-							</ul>
-						</div>
-					</section>
+							{% endfor %}
+						</ul>
+					</div>
+				</section>
 
 				<!-- CTA -->
 					<section id="cta" class="wrapper style4">
