@@ -45,7 +45,7 @@ $(function() {
     });
 
     $('.play').on('click', function() {
-        window.location.href = "{{ site.social.share.video }}";
+        window.location.href = "{{ site.share.video }}";
     });
 
 });
