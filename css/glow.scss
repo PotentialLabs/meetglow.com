@@ -57,6 +57,15 @@ $baseurl: '{{ site.baseurl }}/images';
   }
 }
 
+div#full-package {
+  background: transparent url(/images/full-package.png) no-repeat center center;
+  background-size: 75%;
+
+  @include breakpoint(medium) {
+    background: transparent;
+  }
+}
+
 .only-large {
   @include breakpoint(large) {
     display: inherit;
