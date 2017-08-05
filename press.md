@@ -1,7 +1,10 @@
 ---
-title: Press Kit
+title: Press
 layout: press
 ---
+
+## Press Kit
+
 
 # **Glow**
 
@@ -61,6 +64,10 @@ Glow is an easy first step that consumers can take towards combating waste, high
 > “Glow puts homeowners in charge of their energy usage. By understanding when they’re using energy, they can save money and help the environment at the same time.”
 > — Ben Lachman, Co-founder
 
+### Customer Quote
+
+> "I find Glow's app to be very informative. I check my home's energy usage multiple times a day, to make sure that everything is in order. I was able to achieve levels of less than 250W total usage when no one was home". -- Michele Migliuolo
+
 ### Company facts
 
 - Founded in 2014 with the goal of developing an energy monitoring solution for mainstream Americans that was safe to install and easy to use.
@@ -78,7 +85,7 @@ Glow is an easy first step that consumers can take towards combating waste, high
 Ben has been building software for Apple platforms for the past 15 years. He’s started two small software companies (Acacia Tree Software and Nice Mohawk Limited), and his apps have been used by millions worldwide. Ben got interested in energy efficiency after having a Solar PV system installed on his first home in 2009.
 
 #### **Robin Kinney (Co-founder, CTO)** -- [robin@energyglow.io](mailto:robin@energyglow.io)
-Robin is an electrical engineer and manager with 25 years of experience in the Silicon Valley medical device industry. His past experience covers research, development, and software quality management. Robin was part of the team that built the first linear accelerator for cancer treatment. Over the past 10 years, Robin has been active in the energy monitoring space, as well as doing energy efficiency work with nonprofits in Southeast Ohio.
+Robin is an electrical engineer and manager with 25 years of experience in the Silicon Valley medical device industry. His past experience covers research, development, and software quality management. Robin was part of the team that produced the first fetal pulse oximeter used during labor and delivery. Over the past 10 years, Robin has been active in the energy monitoring space, as well as doing energy efficiency work with nonprofits in Southeast Ohio.
 
 #### **Karen Davis (CFO)**
 25+ years of experience helping companies achieve objectives. Multiple CFO positions in addition to management roles in accounting & VC firms.
