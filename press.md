@@ -66,7 +66,8 @@ Glow is an easy first step that consumers can take towards combating waste, high
 
 ### Customer Quote
 
-> "I find Glow's app to be very informative. I check my home's energy usage multiple times a day, to make sure that everything is in order. I was able to achieve levels of less than 250W total usage when no one was home". -- Michele Migliuolo
+> "I find Glow's app to be very informative. I check my home's energy usage multiple times a day, to make sure that everything is in order. I was able to achieve levels of less than 250W total usage when no one was home".
+> -- Michele Migliuolo, Ph.D.
 
 ### Company facts
 
