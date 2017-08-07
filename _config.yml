@@ -11,6 +11,7 @@ email: hello@meetglow.com
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://meetglow.com" # the base hostname & protocol for your site
 permalink: pretty
+exclude: ['README.txt', 'Gemfile.lock', 'Gemfile', 'LICENSE.txt', 'CNAME']
 
 share:
   kickstarter: https://www.kickstarter.com/projects/1178650747/202759999
