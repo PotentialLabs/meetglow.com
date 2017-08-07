@@ -30,6 +30,10 @@ $baseurl: '{{ site.baseurl }}/images';
 /* Basic                                                                         */
 /*********************************************************************************/
 
+h2 {
+  font-size: 1.25em;
+}
+
 #header h1 a {
   font-family: "Expletus Sans", sans-serif;
   text-transform: none;
@@ -67,25 +71,46 @@ div#full-package {
 }
 
 .only-large {
-  @include breakpoint(large) {
-    display: inherit;
-  }
-
   @include breakpoint(medium) {
     display: none;
   }
 }
 
 .not-large {
-  @include breakpoint(large) {
-    display: none;
-  }
+  display: none;
 
   @include breakpoint(medium) {
     display: inherit;
   }
 }
 
+.wrapper {
+  &.style6 {
+    @include padding(6em, 0);
+    background-color: darken(_palette(bg), 8);
+    text-align: center;
+
+    .icons {
+      font-size: 1.25em;
+
+      a {
+        color: _palette(fg-light);
+
+        &:hover {
+          color: _palette(fg);
+        }
+      }
+    }
+
+    @include breakpoint(medium) {
+      @include padding(4em, 3em);
+    }
+
+    @include breakpoint(small) {
+      @include padding(3em, 2em);
+    }
+  }
+}
 
 div.faq {
   img {
@@ -93,7 +118,7 @@ div.faq {
     display: block;
     margin: 0 auto;
 
-    @include breakoint(small) {
+    @include breakpoint(small) {
       width: 100%;
     }
   }
@@ -103,7 +128,7 @@ div.press {
   width: 50%;
   margin: 0 auto;
 
-  @include breakoint(small) {
+  @include breakpoint(small) {
     width: 90%;
   }
 
@@ -156,7 +181,7 @@ div.press {
     display: block;
     margin: 0 auto;
 
-    @include breakoint(small) {
+    @include breakpoint(small) {
       width: 90%;
     }
   }
@@ -167,7 +192,7 @@ div.press {
     padding: 10px;
     width: 40%;
 
-    @include breakoint(small) {
+    @include breakpoint(small) {
       margin-top: inherit;
       float: none;
       width: 90%;
@@ -188,7 +213,7 @@ div.press {
       background-position:0 0, 15px 15px;
     }
 
-    @include breakoint(small) {
+    @include breakpoint(small) {
       /* Styles */
       width: 90%;
     }
@@ -200,7 +225,7 @@ img#kickstarter {
   padding: 1em;
   width: 60%;
 
-  @include breakoint(small) {
+  @include breakpoint(small) {
     width: 100%;
   }
 }

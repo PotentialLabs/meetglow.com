@@ -5,16 +5,20 @@
 - name: Robin Kinney
   title: Co-founder, CTO
   email: robin@energyglow.io
-  bio: Robin is an electrical engineer and manager with 25 years of experience in the Silicon Valley medical device industry. His past experience covers research, development, and software quality management. Robin was part of the team that built the first linear accelerator for cancer treatment. Over the past 10 years, Robin has been active in the energy monitoring space, as well as doing energy efficiency work with nonprofits in Southeast Ohio.
+  bio: Robin is an electrical engineer and manager with 25 years of experience in the Silicon Valley medical device industry. His past experience covers research, development, and software quality management. Robin was part of the team that produced the first fetal pulse oximeter used during labor and delivery. Over the past 10 years, Robin has been active in the energy monitoring space, as well as doing energy efficiency work with nonprofits in Southeast Ohio.
 - name: Karen Davis
   title: CFO
   email:
   bio: 25+ years of experience helping companies achieve objectives. Multiple CFO positions in addition to management roles in accounting & VC firms.
+- name: Andrew Cantino, MSCS
+  title: Technical Advisor
+  email:
+  bio: Software guy. Previously Principal Engineer at Hightower, Chief Architect at Mavenlink, Consultant at Pivotal Labs. Background in physics, machine learning, & web security.
 - name: Eric Marcoullier
   title: Advisor
   email:
   bio: "Product guy. Original mentor at TechStars Boulder. Past startups: IGN, MyBlogLog (acquired by Yahoo), Gnip (acquired by Twitter) & OneTrueFan (acquired by BigDoor)."
-- name: Dr. Kirk Rowe
+- name: Dr. Kirk Rowe, Ph.D.
   title: Advisor
   email:
   bio: USAF Lt. Colonel & Board Certified Clinical Neuropsychologist with experience in behavioral psychology and work on energy efficiency with the Air Force.
