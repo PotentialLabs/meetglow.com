@@ -30,9 +30,9 @@ $(function() {
 
 
           if ((screen.width < 480) || (screen.height < 480)) {
-              window.open ('http://hrefshare.com/e37f5', '', 'toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=no, copyhistory=no, width='+w+', height='+h+', top='+top+', left='+left);
+              window.open ('http://hrefshare.com/08648', '', 'toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=no, copyhistory=no, width='+w+', height='+h+', top='+top+', left='+left);
           } else {
-              window.open ('http://hrefshare.com/e37f5', '', 'toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=no, copyhistory=no, width='+w+', height='+h+', top='+top+', left='+left);
+              window.open ('http://hrefshare.com/08648', '', 'toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=no, copyhistory=no, width='+w+', height='+h+', top='+top+', left='+left);
           }
 
         // var loc = encodeURIComponent('http://bit.ly/somawater'),
