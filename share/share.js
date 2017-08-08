@@ -45,7 +45,7 @@ $(function() {
     });
 
     $('.play').on('click', function() {
-        window.location.href = "{{ site.share.video }}";
+        window.location.href = "{{ http://ezrt.io/f01f0b7 }}";
     });
 
 });
