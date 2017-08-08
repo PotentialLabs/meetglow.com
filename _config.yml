@@ -14,8 +14,8 @@ permalink: pretty
 exclude: ['README.txt', 'Gemfile.lock', 'Gemfile', 'LICENSE.txt', 'CNAME']
 
 share:
-  kickstarter: https://www.kickstarter.com/projects/1178650747/202759999
-  video: https://www.youtube.com/watch?v=L-npFJcauwA
+  kickstarter: http://ezrt.io/f01f0b7
+  video: http://ezrt.io/f01f0b7
 
 social:
   twitter: https://twitter.com/meetglow
