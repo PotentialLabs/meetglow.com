@@ -45,7 +45,7 @@ $(function() {
     });
 
     $('.play').on('click', function() {
-        window.location.href = "{{ http://ezrt.io/f01f0b7 }}";
+        window.location.href = "http://ezrt.io/f01f0b7";
     });
 
 });
