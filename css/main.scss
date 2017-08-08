@@ -1737,11 +1737,12 @@ $baseurl: '{{ site.baseurl }}/images';
 		text-align: center;
 
 		@include breakpoint(small) {
-			#mce-EMAIL {
+			input {
 				max-width: 90%;
 				margin: auto;
 			}
-			#mc-embedded-subscribe {
+
+			.button {
 				margin-top: 1em;
 			}
 		}
@@ -1835,6 +1836,12 @@ $baseurl: '{{ site.baseurl }}/images';
 				background-position: center center;
 				background-repeat: no-repeat;
 				background-size: cover;
+			}
+
+			@include breakpoint(small) {
+				.button {
+					margin: auto;
+				}
 			}
 
 			#footer {
