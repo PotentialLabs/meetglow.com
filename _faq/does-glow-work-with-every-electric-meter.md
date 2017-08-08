@@ -8,6 +8,10 @@ Glow currently works with digital meters in the most common installation configu
 
 ![Supported Meters](/images/faq-supported-meters-infographic.jpg)
 
+You also might want to make sure your meter box has space for the Glow sensor. Here's an easy way to check:
+
+![Sensor Fit](/images/faq-sensor-fit-small.jpg)
+
 We're always trying to improve our sensor technology to support more solutions. Sign up here to stay up to date when we support new meters.
 
 <form action="//meetglow.us13.list-manage.com/subscribe/post?u=61d11de5faa83932b7cdc074f&amp;id=59c16bd526" method="post" name="mc-embedded-subscribe-form" target="_blank" novalidate>
