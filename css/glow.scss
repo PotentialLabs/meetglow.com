@@ -131,6 +131,15 @@ div.faq {
       width: 100%;
     }
   }
+
+  form {
+    .button {
+      @include breakpoint(small) {
+        margin: auto;
+        margin-top: 1em;
+      }
+    }
+  }
 }
 
 div.press {
