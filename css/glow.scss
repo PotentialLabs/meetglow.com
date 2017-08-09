@@ -32,6 +32,13 @@ $baseurl: '{{ site.baseurl }}/images';
 
 h2 {
   font-size: 1.25em;
+
+}
+
+#intro {
+  font-family: 'Montserrat';
+  font-weight: 300;
+  font-variant-caps: all-small-caps;
 }
 
 #header h1 a {
@@ -164,6 +171,12 @@ div.press {
     @include josefin;
     font-size: 1.5em;
     text-align: center;
+    text-transform: none;
+
+    .strong {
+      @include josefin;
+      font-weight: 400;
+    }
   }
 
   h2#press {
@@ -178,10 +191,10 @@ div.press {
     //@include montserrat(2em);
   }
 
-  h4 {
+  h4.strong {
     padding: 10px 0;
     @include josefin;
-    font-size: 1.25em;
+    font-size: 1em;
   }
 
   ul {
@@ -253,10 +266,6 @@ img#kickstarter {
 /*********************************************************************************/
 
 #banner {
-  h2 {
-    font-weight: 400;
-  }
-
   .subtitle {
     letter-spacing: normal;
     text-transform: none;
@@ -268,5 +277,6 @@ img#kickstarter {
     font-size: 1.1em;
     font-variant-caps: normal;
     text-transform: none;
+    font-weight: 400;
   }
 }

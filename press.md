@@ -12,11 +12,13 @@ layout: press
 
 &nbsp;
 
+Watch the [launch video now]({{ site.share.kickstarter }}).
+
 ### Who We Are
 
 Potential Labs is a hardware technology startup whose mission is putting homeowners in charge of their electricity bills.  Nestled in the hills of Southeast Ohio, part of the Appalachian region, Potential Labs’ solutions help consumers understand their energy usage, save money, and reduce their impact on the environment.
 
-Potential Labs is launching their first product, Glow, with a Kickstarter campaign in early August.
+Potential Labs is launching their first product, Glow, with a [Kickstarter campaign]({{ site.share.kickstarter }}) in early August.
 
 ### The Product: Glow
 
@@ -82,11 +84,11 @@ Glow is an easy first step that consumers can take towards combating waste, high
 
 ### Core Team
 
-#### **Ben Lachman (Co-founder, CEO)** -- [ben@energyglow.io](mailto:ben@energyglow.io)
-Ben has been building software for Apple platforms for the past 15 years. He’s started two small software companies (Acacia Tree Software and Nice Mohawk Limited), and his apps have been used by millions worldwide. Ben got interested in energy efficiency after having a Solar PV system installed on his first home in 2009.
+#### **Ben Lachman (Co-founder, CEO)**
+Ben has been building software for Apple platforms for the past 15 years. He’s started two small software companies (Acacia Tree Software and Nice Mohawk Limited), and his apps have been used by millions worldwide. Ben got interested in energy efficiency after having a Solar PV system installed on his first home in 2009. [ben@energyglow.io](mailto:ben@energyglow.io)
 
-#### **Robin Kinney (Co-founder, CTO)** -- [robin@energyglow.io](mailto:robin@energyglow.io)
-Robin is an electrical engineer and manager with 25 years of experience in the Silicon Valley medical device industry. His past experience covers research, development, and software quality management. Robin was part of the team that produced the first fetal pulse oximeter used during labor and delivery. Over the past 10 years, Robin has been active in the energy monitoring space, as well as doing energy efficiency work with nonprofits in Southeast Ohio.
+#### **Robin Kinney (Co-founder, CTO)**
+Robin is an electrical engineer and manager with 25 years of experience in the Silicon Valley medical device industry. His past experience covers research, development, and software quality management. Robin was part of the team that produced the first fetal pulse oximeter used during labor and delivery. Over the past 10 years, Robin has been active in the energy monitoring space, as well as doing energy efficiency work with nonprofits in Southeast Ohio. [robin@energyglow.io](mailto:robin@energyglow.io)
 
 #### **Karen Davis (CFO)**
 25+ years of experience helping companies achieve objectives. Multiple CFO positions in addition to management roles in accounting & VC firms.
@@ -102,14 +104,18 @@ USAF Lt. Colonel & Board Certified Clinical Neuropsychologist with experience in
 
 ![Potential Labs Team](/images/team_shot.jpg)
 
+Get the [press release](/pr/glow-launch-8-9-17.pdf).
+
 ### Contact
 
 Ben Lachman, Co-founder  
-[ben@meetglow.com](mailto:ben@meetglow.com) // 740.590.0009 // [@blach](http://twitter.com/blach)
+[ben@meetglow.com](mailto:ben@meetglow.com) // 740.298.4569 // [@blach](http://twitter.com/blach)
 
 ---
 
 ![](/images/glow-view7.jpg)
+
+![](/images/glow-energy.jpg)
 
 ![](/images/glow-view3-amber.jpg)
 
