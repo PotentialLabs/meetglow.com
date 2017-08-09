@@ -4,4 +4,4 @@ layout: faq
 ---
 Nope. Glow can be install safely, no wiring required, by pretty much anyone.
 
-It take most people about 10 minutes to install Glow. Depending on your house it could be a bit shorter or longer.
+It takes most people about 10 minutes to install Glow. Depending on your house it could be a bit shorter, or longer.

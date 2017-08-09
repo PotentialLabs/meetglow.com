@@ -2,9 +2,9 @@
 title: "Will Glow work outside the US?"
 layout: faq
 ---
-Currently Glow only works with meter configurations in the US. We'd love to expand to other countries in the future however.
+Currently Glow only works with meter configurations in the US and Canada since they share the same grid. We'd love to expand to other countries in the future however.
 
-Sign up here to stay up to date when we support more countries.
+Sign up here to stay up to date when we announce support more countries.
 
 <form action="//meetglow.us13.list-manage.com/subscribe/post?u=61d11de5faa83932b7cdc074f&amp;id=e824ad3f88" method="post" name="mc-embedded-subscribe-form" target="_blank" novalidate>
   <div class="row">
