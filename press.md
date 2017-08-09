@@ -29,7 +29,7 @@ Glow is a smart energy tracker for the home. It gives users glowing real-time fe
 ### Features
 
 - Wireless sensor monitors energy usage
-- Stylish, in-home display glows to show real-time feedback
+- Elegantly designed in-home display glows to show real-time feedback
 - Advanced algorithms learn users' energy usage patterns to tailor feedback and recommendations
 - Mobile push notifications alert users of high usage
 - Energy cost forecasting lets users set goals and track progress
