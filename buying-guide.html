@@ -1,0 +1,85 @@
+---
+title: Buying Guide
+internal: true
+subtitle: This will guide you in determining if Glow is compatible with your home
+layout: page
+---
+
+<script>
+  document.addEventListener("DOMContentLoaded", function(event) {
+    $("a[data-question-result]").on("click", function(event) {
+      showQuestionResult($(event.target));
+
+      event.preventDefault();
+    });
+
+    $("a#reset").on("click", function(event) {
+      resetSurvey();
+
+      event.preventDefault();
+    });
+  });
+
+  function showQuestionResult(target) {
+    var idToShow = "#" + target.data('question-result');
+    var element = $(idToShow);
+    element.removeClass("hidden");
+  }
+
+  function resetSurvey(){
+    console.log("reset!");
+    $('[id*=question-]').addClass("hidden"); // Hide all question-* elements
+    $("#question-1").removeClass("hidden");
+  }
+</script>
+
+{% for question_set in site.data.buying_guide %}
+	<div class="row question {{ question_set.question.initial_state }}" id="question-{{ question_set.id }}">
+		<section class="8u -2u">
+			<!-- <a href="{{ site.prefix }}{{ post.url }}" class="image full"><img src="/assets/{{ post.featured }}" alt=""></a> -->
+			<header>
+				<h2 class="question">{{ question_set.question.text }}</a></h2>
+			</header>
+			{{ question_set.question.helper_text }}
+
+			<p class="responses">
+				{% for response_option in question_set.responses %}
+					<div class="response">
+            {% if response_option.image_path %}
+              <img src="{{ response_option.image_path }}" width="300px" />
+            {% endif %}
+						<a href="#" data-question-result="{{ response_option.result }}">{{ response_option.text }}</a>
+					</div>
+				{% endfor %}
+			</p>
+		</section>
+	</div>
+{% endfor %}
+
+<div class="row result hidden" id="question-success">
+	<section class="8u -2u">
+		<header>
+			<h2>Home is Compatible</a></h2>
+		</header>
+
+		<p>
+			Yay! Your home is compatible with Glow. You'll be saving money and helping the environment before you know it. <a href="{{ site.share.kickstarter }}">Support us on kickstarter</a> now!
+		</p>
+	</section>
+</div>
+
+<div class="row result hidden" id="question-failure">
+	<section class="8u -2u">
+		<header>
+			<h2>Home is not Compatible</a></h2>
+		</header>
+
+		<p>
+			We're sorry, but your home is not compatible. Please signup below for details about when we expand abilities to support your house.
+		</p>
+	</section>
+</div>
+
+<div class="row controls">
+  <a href="#" class="button" id="reset">RESET</a>
+</div>
