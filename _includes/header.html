@@ -9,14 +9,15 @@
           <ul>
             <li><a href="/">Home</a></li>
             {% for my_page in site.pages %}
-            {% if my_page.title %}
-            {% unless my_page.internal %}
-            <li><a href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a></li>
-            {% endunless %}
-            {% endif %}
+              {% if my_page.title %}
+                {% unless my_page.internal %}
+                  <li><a href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a></li>
+                {% endunless %}
+              {% endif %}
             {% endfor %}
+
             {% if my_page.internal %}
-            <li><a href="#">Get Glow</a></li>
+              <li><a href="#">Get Glow</a></li>
             {% endif %}
             <!-- <li><a href="#">Log In</a></li> -->
             <!-- <li><a href="{{ "/feed.xml" | prepend: site.baseurl }}"
