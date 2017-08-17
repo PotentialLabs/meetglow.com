@@ -9,6 +9,7 @@ layout: page
   document.addEventListener("DOMContentLoaded", function(event) {
     $("a[data-question-result]").on("click", function(event) {
       showQuestionResult($(event.target));
+      // disableSelfAndSiblings($(event.target).parents(".question"))
 
       event.preventDefault();
     });
@@ -21,65 +22,98 @@ layout: page
   });
 
   function showQuestionResult(target) {
-    var idToShow = "#" + target.data('question-result');
+    var idToShow = "#" + question_result(target);
     var element = $(idToShow);
     element.removeClass("hidden");
+
+    scrollToId(idToShow);
   }
 
+  function question_result(target) {
+    // This is to allow both link text and images to be clickable
+    var target = target.data('question-result') ? target : target.parent();
+
+    return target.data('question-result')
+  }
+
+  function scrollToId(id) {
+    $('html, body').animate({
+      scrollTop: $(id).offset().top
+    }, 1000);
+  }
+
+  // function disableSelfAndSiblings(target) {
+  //   console.log(target.find("a[data-question-result]"))
+  // }
+
   function resetSurvey(){
-    console.log("reset!");
     $('[id*=question-]').addClass("hidden"); // Hide all question-* elements
     $("#question-1").removeClass("hidden");
+    scrollToId("#question-1")
   }
 </script>
 
-{% for question_set in site.data.buying_guide %}
-	<div class="row question {{ question_set.question.initial_state }}" id="question-{{ question_set.id }}">
-		<section class="8u -2u">
-			<!-- <a href="{{ site.prefix }}{{ post.url }}" class="image full"><img src="/assets/{{ post.featured }}" alt=""></a> -->
-			<header>
-				<h2 class="question">{{ question_set.question.text }}</a></h2>
-			</header>
-			{{ question_set.question.helper_text }}
+<div class="buying-guide">
+  {% for question_set in site.data.buying_guide %}
+  	<div class="row question {{ question_set.question.initial_state }}" id="question-{{ question_set.id }}">
+  		<section class="8u -2u">
+  			<header>
+  				<h2 class="question">{{ question_set.question.text }}</a></h2>
+  			</header>
 
-			<p class="responses">
-				{% for response_option in question_set.responses %}
-					<div class="response">
-            {% if response_option.image_path %}
-              <img src="{{ response_option.image_path }}" width="300px" />
-            {% endif %}
-						<a href="#" data-question-result="{{ response_option.result }}">{{ response_option.text }}</a>
-					</div>
-				{% endfor %}
-			</p>
-		</section>
-	</div>
-{% endfor %}
+  			{{ question_set.question.helper_text }}
 
-<div class="row result hidden" id="question-success">
-	<section class="8u -2u">
-		<header>
-			<h2>Home is Compatible</a></h2>
-		</header>
+  			<p class="responses">
+          <div class="row">
+            {% for response_option in question_set.responses %}
+              {% assign grid_width = 12 | divided_by: question_set.responses.size %}
 
-		<p>
-			Yay! Your home is compatible with Glow. You'll be saving money and helping the environment before you know it. <a href="{{ site.share.kickstarter }}">Support us on kickstarter</a> now!
-		</p>
-	</section>
-</div>
+    					<div class="{{ grid_width }}u response">
+                {% if response_option.image_path %}
+                  <a href="#" class="image fit" data-question-result="{{ response_option.result }}">
+                    <img src="{{ response_option.image_path }}" class="fit" /><br />
+                    {{ response_option.text }}
+                  </a>
+                {% else %}
+                  <a href="#" class="button" data-question-result="{{ response_option.result }}">
+                    {{ response_option.text }}
+                  </a>
+                {% endif %}
+    					</div>
+    				{% endfor %}
+          </div>
+  			</p>
+  		</section>
+  	</div>
+  {% endfor %}
 
-<div class="row result hidden" id="question-failure">
-	<section class="8u -2u">
-		<header>
-			<h2>Home is not Compatible</a></h2>
-		</header>
+  <div class="row result hidden" id="question-success">
+  	<section class="8u -2u">
+  		<header>
+  			<h2>Glow is compatible!</a></h2>
+  		</header>
 
-		<p>
-			We're sorry, but your home is not compatible. Please signup below for details about when we expand abilities to support your house.
-		</p>
-	</section>
-</div>
+  		<p>
+  			Yay! Glow is compatabile with Glow. You'll be saving money and helping the environment before you know it. <a href="{{ site.share.kickstarter }}">Support us on kickstarter</a> now!
+  		</p>
+  	</section>
+  </div>
 
-<div class="row controls">
-  <a href="#" class="button" id="reset">RESET</a>
+  <div class="row result hidden" id="question-failure">
+  	<section class="8u -2u">
+  		<header>
+  			<h2>Glow is not comptabile</a></h2>
+  		</header>
+
+  		<p>
+  			We're sorry, but Glow is not currently compatible with your home. Please signup below for details about when we are able to support your home.
+  		</p>
+  	</section>
+  </div>
+
+  <div class="row controls">
+    <div class="8u -2u">
+      <a href="#" class="button special" id="reset">RESET</a>
+    </div>
+  </div>
 </div>

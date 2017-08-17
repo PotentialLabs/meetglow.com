@@ -153,6 +153,21 @@ div.faq {
   }
 }
 
+div.buying-guide {
+  .question {
+    .response {
+      a {
+        border-bottom: none;
+      }
+      text-align: center;
+    }
+  }
+
+  .controls {
+    text-align: center;
+  }
+}
+
 div.press {
   width: 50%;
   margin: 0 auto;
