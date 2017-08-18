@@ -27,9 +27,9 @@
   question:
     helper_text: Telephone and cable equipment are ok.
     initial_state: hidden
-    text: Are there other electrical devices within 4 feet of the meter panel?
+    text: Is the space within 4ft clear other electrical devices?
   responses:
     - text: "Yes"
-      result: question-failure
-    - text: "No"
       result: question-success
+    - text: "No"
+      result: question-failure
