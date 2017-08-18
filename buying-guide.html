@@ -8,6 +8,7 @@ layout: page
 <script>
   document.addEventListener("DOMContentLoaded", function(event) {
     $("a[data-question-result]").on("click", function(event) {
+      ensureValidUIState($(event.target));
       showQuestionResult($(event.target));
       // disableSelfAndSiblings($(event.target).parents(".question"))
 
@@ -42,9 +43,23 @@ layout: page
     }, 1000);
   }
 
-  // function disableSelfAndSiblings(target) {
-  //   console.log(target.find("a[data-question-result]"))
-  // }
+  function ensureValidUIState(target) {
+    window.parentId = parseInt(target.parents(".question").data("question-index"));
+
+    $.each($("[data-question-index]"), function(index, value){
+      var id = parseInt($(value).data("question-index"));
+
+      // Don't change my current question, but keep processing
+      if (id <= window.parentId) {
+        return true
+      }
+
+      $(value).addClass("hidden")
+    })
+
+    $('#question-success').addClass("hidden");
+    $('#question-failure').addClass("hidden");
+  }
 
   function startOverSurvey(){
     $('[id*=question-]').addClass("hidden"); // Hide all question-* elements
@@ -55,7 +70,7 @@ layout: page
 
 <div class="buying-guide">
   {% for question_set in site.data.buying_guide %}
-  	<div class="row question {{ question_set.question.initial_state }}" id="question-{{ question_set.id }}">
+  	<div class="row question {{ question_set.question.initial_state }}" id="question-{{ question_set.id }}" data-question-index="{{ question_set.id }}">
   		<section class="8u -2u">
   			<header>
   				<h2 class="question">{{ question_set.question.text }}</a></h2>
