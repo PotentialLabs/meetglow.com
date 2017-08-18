@@ -68,18 +68,20 @@ layout: page
             {% for response_option in question_set.responses %}
               {% assign grid_width = 12 | divided_by: question_set.responses.size %}
 
-    					<div class="{{ grid_width }}u response">
-                {% if response_option.image_path %}
+              {% if response_option.image_path %}
+    					  <div class="{{ grid_width }}u 12u$(small) response">
                   <a href="#" class="image fit" data-question-result="{{ response_option.result }}">
                     <img src="{{ response_option.image_path }}" class="fit" /><br />
                     {{ response_option.text }}
                   </a>
-                {% else %}
+                </div>
+              {% else %}
+                <div class="{{ grid_width }}u response">
                   <a href="#" class="button" data-question-result="{{ response_option.result }}">
                     {{ response_option.text }}
                   </a>
-                {% endif %}
-    					</div>
+                </div>
+              {% endif %}
     				{% endfor %}
           </div>
   			</p>
@@ -94,7 +96,7 @@ layout: page
   		</header>
 
   		<p>
-  			Yay! Glow is compatabile with Glow. You'll be saving money and helping the environment before you know it. <a href="{{ site.share.kickstarter }}">Support us on kickstarter</a> now!
+  			Yay! Glow is compatabile with Glow. You'll be saving money and helping the environment before you know it. <br /><a class="button special fit cta" href="{{ site.share.kickstarter }}">Buy Now</a>
   		</p>
   	</section>
   </div>

@@ -155,11 +155,29 @@ div.faq {
 
 div.buying-guide {
   .question {
+    header {
+      text-align: center;
+    }
+
     .response {
       a {
         border-bottom: none;
       }
       text-align: center;
+    }
+  }
+
+  .result {
+    header, p {
+      text-align: center;
+    }
+
+    p {
+      font-size: 1.25em;
+    }
+
+    .cta {
+      margin-top: 15px;
     }
   }
 
