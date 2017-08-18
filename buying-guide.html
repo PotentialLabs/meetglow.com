@@ -14,8 +14,8 @@ layout: page
       event.preventDefault();
     });
 
-    $("a#reset").on("click", function(event) {
-      resetSurvey();
+    $("a#start-over").on("click", function(event) {
+      startOverSurvey();
 
       event.preventDefault();
     });
@@ -46,7 +46,7 @@ layout: page
   //   console.log(target.find("a[data-question-result]"))
   // }
 
-  function resetSurvey(){
+  function startOverSurvey(){
     $('[id*=question-]').addClass("hidden"); // Hide all question-* elements
     $("#question-1").removeClass("hidden");
     scrollToId("#question-1")
@@ -113,7 +113,7 @@ layout: page
 
   <div class="row controls">
     <div class="8u -2u">
-      <a href="#" class="button special" id="reset">RESET</a>
+      <a href="#" id="start-over">Start Over</a>
     </div>
   </div>
 </div>
