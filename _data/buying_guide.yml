@@ -15,7 +15,7 @@
       result: question-failure
 - id: 2
   question:
-    helper_text: We need at least enough space for a credit card to lie flat aginst the meter panel surface without interference.
+    helper_text: We need at least enough space for a credit card to lie flat against the meter panel surface without interference.
     initial_state: hidden
     text: Is there space above the meter?
   responses:
