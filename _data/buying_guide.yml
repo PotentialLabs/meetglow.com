@@ -15,7 +15,7 @@
       result: question-failure
 - id: 2
   question:
-    helper_text: We need at least enough space for a credit card to lie flat on the meter panel surface above the meter without interference from a) the contoured circular flange around the meter and b)flange extending from the top of the meter panel
+    helper_text: We need at least enough space for a credit card to lie flat against the meter panel surface without interference.
     initial_state: hidden
     text: Is there space above the meter?
   responses:
@@ -25,11 +25,11 @@
       result: question-failure
 - id: 3
   question:
-    helper_text: Telephone and cable equipment are ok.
+    helper_text: We need 4ft of clear space. Telephone and cable equipment are ok.
     initial_state: hidden
-    text: Are there other electrical devices within 4 feet of the meter panel?
+    text: Is the space close to your meter clear of other electrical devices?
   responses:
     - text: "Yes"
-      result: question-failure
-    - text: "No"
       result: question-success
+    - text: "No"
+      result: question-failure
