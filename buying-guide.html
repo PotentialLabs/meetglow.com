@@ -39,7 +39,7 @@ layout: page
 
   function scrollToId(id) {
     $('html, body').animate({
-      scrollTop: $(id).offset().top
+      scrollTop: $(id).offset().top - ($('header').height() + 20)
     }, 1000);
   }
 
@@ -111,7 +111,7 @@ layout: page
   		</header>
 
   		<p>
-  			Yay! Glow is compatabile with Glow. You'll be saving money and helping the environment before you know it. <br /><a class="button special fit cta" href="{{ site.share.kickstarter }}">Buy Now</a>
+  			Success! Glow is compatabile with your home. You'll be saving money and helping the environment before you know it. <br /><a class="button special fit cta" href="https://www.kickstarter.com/projects/1178650747/glow-the-smart-energy-tracker-for-your-home/pledge/new">Claim Yours Now</a>
   		</p>
   	</section>
   </div>
