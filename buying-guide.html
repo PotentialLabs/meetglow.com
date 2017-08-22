@@ -76,7 +76,17 @@ layout: page
   				<h2 class="question">{{ question_set.question.text }}</a></h2>
   			</header>
 
-  			{{ question_set.question.helper_text }}
+        <div class="row">
+          {% if question_set.question.helper_image_path %}
+          <div class="12u$">
+            <div class="image fit">
+              <img src="{{ question_set.question.helper_image_path }}" class="fit" />
+            </div>
+          </div>
+          {% else %}
+    			   {{ question_set.question.helper_text }}
+          {% endif %}
+        </div>
 
   			<p class="responses">
           <div class="row">
