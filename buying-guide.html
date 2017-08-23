@@ -71,12 +71,22 @@ layout: page
 <div class="buying-guide">
   {% for question_set in site.data.buying_guide %}
   	<div class="row question {{ question_set.question.initial_state }}" id="question-{{ question_set.id }}" data-question-index="{{ question_set.id }}">
-  		<section class="8u -2u">
+  		<section class="-2u 8u 12u$(small)">
   			<header>
   				<h2 class="question">{{ question_set.question.text }}</a></h2>
   			</header>
 
-  			{{ question_set.question.helper_text }}
+        <div class="row">
+          {% if question_set.question.helper_image_path %}
+          <div class="-2u 8u$ 12u$(small)">
+            <div class="image fit">
+              <img src="{{ question_set.question.helper_image_path }}" class="fit" />
+            </div>
+          </div>
+          {% else %}
+    			   {{ question_set.question.helper_text }}
+          {% endif %}
+        </div>
 
   			<p class="responses">
           <div class="row">
