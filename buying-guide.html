@@ -27,6 +27,14 @@ layout: page
     var element = $(idToShow);
     element.removeClass("hidden");
 
+    if (idToShow === '#question-success') {
+      ga('send', {
+        hitType: 'event',
+        eventCategory: 'Guide',
+        eventAction: 'success',
+      });
+    }
+
     scrollToId(idToShow);
   }
 
@@ -46,7 +54,7 @@ layout: page
   function ensureValidUIState(target) {
     window.parentId = parseInt(target.parents(".question").data("question-index"));
 
-    $.each($("[data-question-index]"), function(index, value){
+    $.each($("[data-question-index]"), function(index, value) {
       var id = parseInt($(value).data("question-index"));
 
       // Don't change my current question, but keep processing
@@ -61,7 +69,7 @@ layout: page
     $('#question-failure').addClass("hidden");
   }
 
-  function startOverSurvey(){
+  function startOverSurvey() {
     $('[id*=question-]').addClass("hidden"); // Hide all question-* elements
     $("#question-1").removeClass("hidden");
     scrollToId("#question-1")
@@ -70,72 +78,66 @@ layout: page
 
 <div class="buying-guide">
   {% for question_set in site.data.buying_guide %}
-  	<div class="row question {{ question_set.question.initial_state }}" id="question-{{ question_set.id }}" data-question-index="{{ question_set.id }}">
-  		<section class="-2u 8u 12u$(small)">
-  			<header>
-  				<h2 class="question">{{ question_set.question.text }}</a></h2>
-  			</header>
+  <div class="row question {{ question_set.question.initial_state }}" id="question-{{ question_set.id }}" data-question-index="{{ question_set.id }}">
+    <section class="-2u 8u 12u$(small)">
+      <header>
+        <h2 class="question">{{ question_set.question.text }}</a></h2>
+      </header>
 
-        <div class="row">
-          {% if question_set.question.helper_image_path %}
-          <div class="-2u 8u$ 12u$(small)">
-            <div class="image fit">
-              <img src="{{ question_set.question.helper_image_path }}" class="fit" />
-            </div>
+      <div class="row">
+        {% if question_set.question.helper_image_path %}
+        <div class="-2u 8u$ 12u$(small)">
+          <div class="image fit">
+            <img src="{{ question_set.question.helper_image_path }}" class="fit" />
           </div>
-          {% else %}
-    			   {{ question_set.question.helper_text }}
-          {% endif %}
         </div>
+        {% else %} {{ question_set.question.helper_text }} {% endif %}
+      </div>
 
-  			<p class="responses">
-          <div class="row">
-            {% for response_option in question_set.responses %}
-              {% assign grid_width = 12 | divided_by: question_set.responses.size %}
-
-              {% if response_option.image_path %}
-    					  <div class="{{ grid_width }}u 12u$(small) response">
-                  <a href="#" class="image fit" data-question-result="{{ response_option.result }}">
+      <p class="responses">
+        <div class="row">
+          {% for response_option in question_set.responses %} {% assign grid_width = 12 | divided_by: question_set.responses.size %} {% if response_option.image_path %}
+          <div class="{{ grid_width }}u 12u$(small) response">
+            <a href="#" class="image fit" data-question-result="{{ response_option.result }}">
                     <img src="{{ response_option.image_path }}" class="fit" /><br />
                     {{ response_option.text }}
                   </a>
-                </div>
-              {% else %}
-                <div class="{{ grid_width }}u response">
-                  <a href="#" class="button" data-question-result="{{ response_option.result }}">
+          </div>
+          {% else %}
+          <div class="{{ grid_width }}u response">
+            <a href="#" class="button" data-question-result="{{ response_option.result }}">
                     {{ response_option.text }}
                   </a>
-                </div>
-              {% endif %}
-    				{% endfor %}
           </div>
-  			</p>
-  		</section>
-  	</div>
+          {% endif %} {% endfor %}
+        </div>
+      </p>
+    </section>
+  </div>
   {% endfor %}
 
   <div class="row result hidden" id="question-success">
-  	<section class="8u -2u">
-  		<header>
-  			<h2>Glow is compatible!</a></h2>
-  		</header>
+    <section class="8u -2u">
+      <header>
+        <h2>Glow is compatible!</a></h2>
+      </header>
 
-  		<p>
-  			Success! Glow is compatabile with your home. You'll be saving money and helping the environment before you know it. <br /><a class="button special fit cta" href="https://www.kickstarter.com/projects/1178650747/glow-the-smart-energy-tracker-for-your-home/pledge/new">Claim Yours Now</a>
-  		</p>
-  	</section>
+      <p>
+        Success! Glow is compatabile with your home. You'll be saving money and helping the environment before you know it. <br /><a class="button special fit cta" href="https://www.kickstarter.com/projects/1178650747/glow-the-smart-energy-tracker-for-your-home/pledge/new">Claim Yours Now</a>
+      </p>
+    </section>
   </div>
 
   <div class="row result hidden" id="question-failure">
-  	<section class="8u -2u">
-  		<header>
-  			<h2>Glow is not comptabile</a></h2>
-  		</header>
+    <section class="8u -2u">
+      <header>
+        <h2>Glow is not comptabile</a></h2>
+      </header>
 
-  		<p>
-  			We're sorry, but Glow is not currently compatible with your home. Please signup below for details about when we are able to support your home.
-  		</p>
-  	</section>
+      <p>
+        We're sorry, but Glow is not currently compatible with your home. Please signup below for details about when we are able to support your home.
+      </p>
+    </section>
   </div>
 
   <div class="row controls">
