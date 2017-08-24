@@ -33,6 +33,12 @@ layout: page
         eventCategory: 'Guide',
         eventAction: 'success',
       });
+    } else if( idToShow === '#question-failure') {
+      ga('send', {
+        hitType: 'event',
+        eventCategory: 'Guide',
+        eventAction: 'failure',
+      });      
     }
 
     scrollToId(idToShow);
