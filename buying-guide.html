@@ -32,13 +32,15 @@ layout: page
         hitType: 'event',
         eventCategory: 'Guide',
         eventAction: 'success',
+        eventLabel: 'success',
       });
     } else if( idToShow === '#question-failure') {
       ga('send', {
         hitType: 'event',
         eventCategory: 'Guide',
         eventAction: 'failure',
-      });      
+        eventLabel: (target.data('question-result') ? target.id : target.parent()[0].id),
+      });
     }
 
     scrollToId(idToShow);
@@ -102,20 +104,22 @@ layout: page
 
       <p class="responses">
         <div class="row">
-          {% for response_option in question_set.responses %} {% assign grid_width = 12 | divided_by: question_set.responses.size %} {% if response_option.image_path %}
-          <div class="{{ grid_width }}u 12u$(small) response">
-            <a href="#" class="image fit" data-question-result="{{ response_option.result }}">
-                    <img src="{{ response_option.image_path }}" class="fit" /><br />
-                    {{ response_option.text }}
-                  </a>
-          </div>
-          {% else %}
-          <div class="{{ grid_width }}u response">
-            <a href="#" class="button" data-question-result="{{ response_option.result }}">
-                    {{ response_option.text }}
-                  </a>
-          </div>
-          {% endif %} {% endfor %}
+          {% for response_option in question_set.responses %} {% assign grid_width = 12 | divided_by: question_set.responses.size %}
+            {% if response_option.image_path %}
+              <div class="{{ grid_width }}u 12u$(small) response">
+                <a href="#" class="image fit" id="question-{{ question_set.id }}-response-{{ response_option.result }}" data-question-result="{{ response_option.result }}">
+                  <img src="{{ response_option.image_path }}" class="fit" /><br />
+                  {{ response_option.text }}
+                </a>
+              </div>
+            {% else %}
+              <div class="{{ grid_width }}u response">
+                <a href="#" class="button" id="question-{{ question_set.id }}-response-{{ response_option.result }}" data-question-result="{{ response_option.result }}">
+                  {{ response_option.text }}
+                </a>
+              </div>
+            {% endif %}
+          {% endfor %}
         </div>
       </p>
     </section>
