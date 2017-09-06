@@ -20,6 +20,10 @@ layout: page
 
       event.preventDefault();
     });
+    
+    if (document.referrer) {
+      $('a.claim-button').attr('href', $('a.claim-button').attr('href') + '?' + document.referrer.split('?')[1]);
+    }
   });
 
   function showQuestionResult(target) {
@@ -133,7 +137,7 @@ layout: page
       </header>
 
       <p>
-        Success! Glow is compatabile with your home. You'll be saving money and helping the environment before you know it. <br /><a class="button special fit cta" href="https://www.kickstarter.com/projects/1178650747/glow-the-smart-energy-tracker-for-your-home/pledge/new">Claim Yours Now</a>
+        Success! Glow is compatible with your home. You'll be saving money and helping the environment before you know it. <br /><a class="button special fit cta claim-button" href="https://www.kickstarter.com/projects/1178650747/glow-the-smart-energy-tracker-for-your-home/pledge/new">Claim Yours Now</a>
       </p>
     </section>
   </div>
@@ -141,7 +145,7 @@ layout: page
   <div class="row result hidden" id="question-failure">
     <section class="8u -2u">
       <header>
-        <h2>Glow is not comptabile</a></h2>
+        <h2>Glow is not compatible</a></h2>
       </header>
 
       <p>
