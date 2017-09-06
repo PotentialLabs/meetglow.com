@@ -189,6 +189,7 @@ div.buying-guide {
 div.press {
   width: 50%;
   margin: 0 auto;
+  font-weight: 300;
 
   @include breakpoint(small) {
     width: 90%;
