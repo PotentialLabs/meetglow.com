@@ -15,7 +15,7 @@ exclude: ['README.txt', 'Gemfile.lock', 'Gemfile', 'LICENSE.txt', 'CNAME']
 
 share:
   kickstarter: https://www.indiegogo.com/projects/glow-the-smart-energy-tracker-for-your-home-technology
-  video: http://ezrt.io/f01f0b7
+  video: https://youtu.be/5aLSxteoc0s
 
 social:
   twitter: https://twitter.com/meetglow
