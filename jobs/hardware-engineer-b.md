@@ -1,6 +1,7 @@
 ---
 title: Hardware Engineer
 layout: page
+internal: true
 ---
 
 #### Build a product that matters as a member of a small, growing team
